@@ -1,0 +1,21 @@
+#include <stdio.h>
+int soDaoNguoc(int n){
+	int soDaoNguoc = 0;
+	while(n>0){
+		int remainder = n%10;
+		soDaoNguoc = soDaoNguoc*10 + remainder;
+		n = n/10;  
+	}
+	return soDaoNguoc; 
+} 
+int main(){
+	int num;
+	int soDaoNguoc;
+	printf("Nhap mot so nguyen:");
+	scanf("%d", &num);
+	
+	soDaoNguoc = soDaoNguoc(num);
+	printf("So dao nguoc la %d", soDaoNguoc);
+	
+	return 0; 
+} 
