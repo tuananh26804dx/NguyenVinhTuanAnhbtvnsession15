@@ -1,0 +1,16 @@
+#include <stdio.h> 
+int tinhTongMang(int arr[], int n){
+	int tong = 0;
+	for(int i=0; i<n; i++) {
+		tong += arr[i]; 
+	}
+	return tong; 
+}
+int main() {
+	int mang[] = {10, 20, 30};
+	int kichThuoc = sizeof(mang) / sizeof(mang[0]);
+	int tongPhanTu = tinhTongMang(mang, kichThuoc);
+	printf("\nTong cac phan tu trong mang la %d", tongPhanTu);
+	
+	return 0; 
+}
